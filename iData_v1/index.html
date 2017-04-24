@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="_main">
+<head>
+    <title>iData v.1.0</title>
+	<meta charset="utf-8" />
+    <link href="../content/ui-bootstrap-csp.css" rel="stylesheet" type="text/css" />
+    <script src="../scripts/angular.min.js" type="text/javascript"></script>
+    <script src="../scripts/angular-ui-router.min.js" type="text/javascript"></script>
+    <script src="../scripts/angular-ui/ui-bootstrap.min.js" type="text/javascript"></script>
+    <script src="../scripts/angular-ui/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
+    <script src="../app/app_setup.js" type="text/javascript"></script>
+    <script src="scripts/underscore-min.js"></script>
+    <script src="app/main/services/iDataLite.js" type="text/javascript"></script>
+    <script src="../app/main/main_controller.js" type="text/javascript"></script>
+    <script src="../app/main/modules/home/home_controller.js" type="text/javascript"></script>
+</head>
+<body ng-controller="MainController as mc">
+    {{test}}
+    hello
+    <div ui-view></div>
+</body>
+</html>
