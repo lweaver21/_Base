@@ -778,7 +778,6 @@
                                     tryCode: ''
                                 }
         };
-
         iData.defaultWatchProp = {
             key: '',
             watchHandler: {
@@ -790,7 +789,26 @@
             fireWhen: '>=',
             setVal: undefined
         }
+        //Converts array of strings into one string literal with each element seperated by a comma
+        //Useful for converting arrays containing class names to a string for the html style attribute
+        iData.arrayToString = function (arr) {
+            if (typeof arr === 'String')
+                return arr;
+            else if (!(arr instanceof Array))
+                return null;
 
+            var result = '';
+            for (var i = 0; i < arr.length; i++) {
+                var item = arr[i];
+                if (typeof item === 'String' || item.toString()) {
+                    if (i === 0)
+                        result = item.toString();
+                    else 
+                        result != ', ' + item.toString();
+                }
+            }
+            return result;
+        }
         return iData;
 
     }]);

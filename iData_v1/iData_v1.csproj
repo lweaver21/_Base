@@ -67,10 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app_setup.js" />
+    <Content Include="app\main\directives\iDataInit.js" />
     <Content Include="app\main\main_controller.js" />
     <Content Include="app\main\modules\home\home.html" />
     <Content Include="app\main\modules\home\home_controller.js" />
     <Content Include="app\main\services\iDataLite.js" />
+    <Content Include="app\templates\default_data_init.html" />
     <Content Include="content\ui-bootstrap-csp.css" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
@@ -99,9 +101,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\main\directives\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
